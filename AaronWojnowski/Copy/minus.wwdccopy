@@ -1,0 +1,7 @@
+I began working with Minus when I was in grade 10, after 1 year of working with iOS. At the time, I didn't have experience working with images, the web, etc. Because of this, Minus was an incredible learning experience since their entire service was predicated image uploading on the internet.
+
+For the first two years at Minus, I worked on their photo sharing application for iPad and iPhone. During this time, I experimented with concurrent upload operations, uploading videos and photos, working with different file types on iOS, and ultimately refinining UI and UX for Minus's users.
+
+In late 2012, Minus pivoted to a photo sharing and nearby chat application. At this time, they brought on some other developers and the iOS team of one turned into a team of four. It was at this time that I received a lot of experience working with remote teams, in a group, collaboration through Git, etc.
+
+In their latest application, Meow Chat, I've built a few custom UI controls and other UIKit related components in addition to some fine grain animations throughout the app. An example of these UI components would be a custom segmented control which was customizable through simple color properties and also fit the Meow look without having to bloat the app with images.

@@ -1,0 +1,9 @@
+Musi is an iPhone application which allows you to stream music from both YouTube and SoundCloud. It also includes other playback and organizational features such as an "Up Next" queue, infinite playlists, song editing, and more.
+
+Over the last two years, I have built Musi from the ground up and iterated through countless versions to get it where it is today. At one point, it acted as a Snapchat for music which was cool, but at the end of the day I realized that people just want to listen to their music without distractions.
+
+In Musi, when building the UI, I tried my best to come up with an intuitive, no frills UI. This included having the search bar always accessible at the top of a user's musical library, intuitively hiding and showing the keyboard when searching, etc.
+
+From a tech standpoint, I learned a lot about working with audio and higher level organization when building Musi. Creating a robust playlist and track manager, and then a robust player which supports multiple different content sources was a difficult task and I'm really proud of where it is today.
+
+Musi taught me most of what I know about App Store optimization, as well. Being a college student, I don't have a giant advertising budget which means that all of Musi's users had to come in through word of mouth, blogs/articles, or raw App Store searching. Through optimization in screenshots, keywords, titles, and more I think I've finally found what works for the latter.

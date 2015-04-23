@@ -1,0 +1,3 @@
+With Musi, I care significantly about how the end user uses the app. Being my most large scale app, it's amazing to think how the slightest change could have a really large effect on the users. One of the things that I'm looking most forward to about WWDC is potentially being able to meet with an Apple UI Engineer and hear their feedback that they have with Musi.
+
+In addition to the UI lab, another lab that I'm looking forward to is the AVFoundation lab. Musi uses AVFoundation for all of its streaming and to be able to get feedback from an Apple engineer would be invaluable. There are already a few bugs and edge cases that I'm looking to work out but unfortunately just can't find the source of, and this lab could certainly make Musi better for its users.
