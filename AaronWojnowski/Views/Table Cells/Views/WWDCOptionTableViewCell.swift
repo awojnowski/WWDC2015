@@ -36,6 +36,20 @@ class WWDCOptionTableViewCell: UITableViewCell {
         
     }()
     
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        self.backgroundColor = UIColor(white: 0.98, alpha: 1.0)
+        
+    }
+    
+    required init(coder decoder: NSCoder) {
+        
+        fatalError("init(coder:) not implemented.")
+        
+    }
+    
     override func layoutSubviews() {
         
         super.layoutSubviews()

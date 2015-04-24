@@ -40,7 +40,7 @@ class WWDCTableViewCell: ParallaxStoryTableViewCell, UITableViewDelegate, UITabl
         "For the incredible lunchtime speakers and lunchtime lectures.",
         "To learn more about developing for the Apple Watch.",
         "For the cutting edge technical sessions.",
-        "For a proverbial dose of development \"pre-workout\".",
+        "For some incredible development inspiration.",
     ]
     
     private lazy var tableView: UITableView = {
@@ -193,7 +193,7 @@ class WWDCTableViewCell: ParallaxStoryTableViewCell, UITableViewDelegate, UITabl
             
         } else if (indexPath.row == 5) {
             
-            viewController.title = "Predeveloperkout"
+            viewController.title = "Inspiration"
             viewController.fileName = "wwdc_preworkout"
             
         }

@@ -26,7 +26,7 @@ class AboutMeTableViewCell: ParallaxStoryTableViewCell {
         
         let view = TextIconView()
         view.label.text = "I'm 19 years old"
-        view.subtitleLabel.text = "But I look like I'm 12"
+        view.subtitleLabel.text = "But some say I barely look my shoe size"
         view.imageView.image = UIImage(named: "cakeIcon")
         self.parallaxView.addSubview(view)
         return view
