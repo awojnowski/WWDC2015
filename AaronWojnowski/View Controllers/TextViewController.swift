@@ -54,6 +54,7 @@ class TextViewController: UIViewController {
         textView.font = UIFont(name: "HelveticaNeue-Light", size: 18.0)
         textView.textColor = UIColor(white: 0.5, alpha: 1.0)
         textView.clipsToBounds = false
+        textView.editable = false
         
         if let fileName = self.fileName {
             

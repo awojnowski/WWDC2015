@@ -527,6 +527,7 @@
 				INFOPLIST_FILE = AaronWojnowski/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "92bcd93b-8be7-4ff0-918a-31518809e382";
 				SWIFT_OBJC_BRIDGING_HEADER = "./AaronWojnowski/Objective-C/AaronWojnowski-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -537,9 +538,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = AaronWojnowski/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "92bcd93b-8be7-4ff0-918a-31518809e382";
 				SWIFT_OBJC_BRIDGING_HEADER = "./AaronWojnowski/Objective-C/AaronWojnowski-Bridging-Header.h";
 			};
 			name = Release;

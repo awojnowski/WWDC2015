@@ -223,7 +223,7 @@ class AppsTableViewCell: ParallaxStoryTableViewCell, SKStoreProductViewControlle
     
     func viewMusi() {
         
-        self.viewAppIdentifier(591560124)
+        self.viewAppIdentifier(591560124, sender: self.musiButton)
         
     }
     
@@ -235,7 +235,7 @@ class AppsTableViewCell: ParallaxStoryTableViewCell, SKStoreProductViewControlle
     
     func viewMinus() {
         
-        self.viewAppIdentifier(585660589)
+        self.viewAppIdentifier(585660589, sender: self.minusButton)
         
     }
     
@@ -247,7 +247,7 @@ class AppsTableViewCell: ParallaxStoryTableViewCell, SKStoreProductViewControlle
     
     func viewFannex() {
         
-        self.viewAppIdentifier(824982957)
+        self.viewAppIdentifier(824982957, sender: self.fannexButton)
         
     }
     
@@ -265,11 +265,38 @@ class AppsTableViewCell: ParallaxStoryTableViewCell, SKStoreProductViewControlle
     
     // MARK: Apps
     
-    func viewAppIdentifier(identifier: Int) {
+    func viewAppIdentifier(identifier: Int, sender: UIButton?) {
+        
+        var activityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
+        activityIndicatorView.bounds = CGRectMake(0, 0, 20, 20)
+        activityIndicatorView.center = sender?.center ?? CGPointZero
+        activityIndicatorView.startAnimating()
+        
+        if sender != nil {
+            
+            sender!.superview?.addSubview(activityIndicatorView)
+            UIView.animateWithDuration(0.25, animations: { () -> Void in
+                
+                sender!.alpha = 0.5
+                
+            });
+            
+        }
+        
+        self.dockView.userInteractionEnabled = false
         
         let storeViewController = SKStoreProductViewController()
         storeViewController.delegate = self
         storeViewController.loadProductWithParameters([ SKStoreProductParameterITunesItemIdentifier : NSNumber(integer: identifier)], completionBlock: { (result, error) -> Void in
+            
+            self.dockView.userInteractionEnabled = true
+            activityIndicatorView.removeFromSuperview()
+            
+            if sender != nil {
+                
+                sender!.alpha = 1.0
+                
+            }
             
             if result {
                 
